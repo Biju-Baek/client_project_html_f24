@@ -10,26 +10,84 @@
 <body>
     <a href = "#main" class = "skip"> Skip to Main Content</a>
     <header>
-        <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "study.html">Study Area</a></li>
-                <li><a href = "food.html">Food</a></li>
-                <li><a href = "tutoring.html">Tutoring</a></li>
+        <nav class = "navbar">
+            <a class = "logo" href = "index.html">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            </a>
+            <ul class = "nav-list">
+                <li class = "nav-item"><a href = "index.html">Home</a></li>
+                <li class = "nav-item"><a href = "study.html">Study</a></li>
+                <li class = "active nav-item"><a href = "food.html">Food</a></li>
+                <li class = "nav-item"><a href = "tutoring.html">Tutoring</a></li>
             </ul>
         </nav>
         <h1>Maize & Blue Cupboard</h1>
-        <img src="images/Food_Pantry.png" alt="food pantry">
     </header>
 
-    <main id = "main"> 
+    <main id = "main">
+        <img src="images/Food_Pantry.png" alt="Shopping food pantry">
         <div>
             <h2>Our Mission</h2>
             <p>To ensure members of the University of Michigan community—whether on a tight budget or physically restrained from getting to a grocery store—receive equitable access to healthy, nutritious, and nourishing food and the ability to prepare it for themselves or others.</p>
         </div>
+        <div class = "appointment">   
+            <h2>Make an appointment now!</h2>
+            <p>Shopping at the Maize and Blue Cupboard is by appointment only. Before you go on shopping, please make an appointment by visiting our sign up page here. </p>
+            <a href="https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2024-10" alt="Link to make an appointment">Make an appointment</a>
+        </div>
+        <div>
+            <h2>What We Provide</h2>
+            <div calss = "gallery">
+                <div class = "gallery1">
+                    <img src="images/icon1.png" alt = "Food icon">
+                    <h3>Food</h3>
+                    <p>Produce, dairy, meat, bread, frozen and shelf-stable foods (i.e. rice, cans, tuna, etc.)</p>
+                </div>
+                <div class = "gallery2">
+                    <img src="images/icon2.png" alt = "Boiling pot icon">
+                    <h3>Kitchen & Cooking</h3>
+                    <p>Dishes, silverware, pots & pans, Tupperware, cutting boards, knives, and other kitchenware</p>
+                </div>
+                <div class = "gallery3">
+                    <img src="images/icon3.png" alt = "Dish detergent icon">
+                    <h3>Personal & Household</h3>
+                    <p>Trash bags, toilet paper, cleaning supplies, hygiene products, school supplies, baby items and more</p>
+                </div>
+                <div class = "gallery4">
+                    <img src="images/icon4.png" alt = "Heart icon">
+                    <h3>Support</h3>
+                    <p>Get connected to campus experts like CAPS, Dean of Students and Financial Aid, as well as SNAP (Michigan's food program)</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>Maize & Blue Cupboard &copy; Biju Baek 2024</p>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are committed to helping students achieve success by providing access to the best learning resources, food options, and tutoring services.</p>
+            </div>
+    
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="study.html">Study Area</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="tutoring.html">Tutoring</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@studentsuccess.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 University Ave, City, State, ZIP</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Student Success Portal | Designed by Biju Baek</p>
+        </div>
     </footer>
 </body>
 </html>
