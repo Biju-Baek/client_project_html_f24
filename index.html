@@ -10,48 +10,53 @@
 <body>
     <a href = "#main" class = "skip">Skip to Main Content</a>
     <header>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <nav>
-            <ul>
-                <li class=  "active"><a href = "index.html">Home</a></li>
-                <li><a href = "study.html">Study Area</a></li>
-                <li><a href = "food.html">Food</a></li>
-                <li><a href = "tutoring.html">Tutoring</a></li>
-            </ul>
-        </nav>
+            <nav class = "navbar">
+                <a class = "logo" href = "index.html">
+                    <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+                </a>
+                <ul class = "nav-list">
+                    <li class= "active nav-item"><a href = "index.html">Home</a></li>
+                    <li class = "nav-item"><a href = "study.html">Study</a></li>
+                    <li class = "nav-item"><a href = "food.html">Food</a></li>
+                    <li class = "nav-item"><a href = "tutoring.html">Tutoring</a></li>
+                </ul>
+            </nav>
         <h1>Student Success Portal</h1>
+        <div class = "heroimage">
+            <img src = "images/U-M_Logo-Horizontal-Hex.png" alt = "University of Michigan Horizontal Logo">
+        </div>
     </header>
     <main id = "main">
         <section>
             <h2>Welcome to the UM Grad Success Navigator</h2>
             <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
             <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
-            <ol>
-                <li>Academic Resources</li>
-                <li>Physical Health</li>
-                <li>Mental Health</li>
-                <li>Life Outside Classroom</li>
-                <li>Contact</li>
-            </ol>
+            <div class="grid-container">
+                <div class="item1">In our Website:</div>
+                <div class="item2">Stydy Area</div>
+                <div class="item3">Food Support</div>  
+                <div class="item4">Peer Tutoring</div>
+                <div class="item4">Contact</div>
+              </div>
         </section>
         <section>
-            <h2>Physical Health</h2>
-            <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
+            <h2>Study Area in Campus</h2>
+            <p>Check out the list of differnent study areas in the campus and find your favorite spot:</p>
             <article>
-                <h3>University Health Service (UHS)</h3>
+                <h3>Hatcher Graduate Library</h3>
                 <figure>
-                    <img src="images/UHS.jpg" alt="University Health Services building">
-                    <figcaption>University Health Services Building</figcaption>
+                    <img src="images/Hatcher_library2.jpeg" alt="Hatcher Graduate Library Building">
+                    <figcaption>Hatcher Gruaduate Library in Central Campus</figcaption>
                 </figure>
-                <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
+                <p>Harlan Hatcher Graduate Library is the university’s largest and most historic library, offering an extensive collection of research materials, quiet study spaces, and stunning architecture that reflects the rich academic tradition of the University of Michigan.</p>
             </article>
             <article>
-                <h3>Recreational Sports</h3>
+                <h3>Kresge Business Administration Library</h3>
                 <figure>
-                    <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
-                    <figcaption>UMSI out in the fall!</figcaption>
+                    <img src="images/Kresge Business Administration Library.jpeg" alt="Kresge Business Administration Library Building.">
+                    <figcaption>Kresge Business Administration Library in Central Campus</figcaption>
                 </figure>
-                <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
+                <p>Located next to Ross Business Building, enjoy authentic global cuisine, cozy study spaces, and an inspiring collection of resources at the Kresge Library, a perfect spot for business students and the broader university community.</p>
             </article>
         </section>
         
@@ -83,9 +88,6 @@
         <section id="life-outside-classroom">
             <h2>Life Outside the Classroom</h2>
             <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
-            <article>
-
-            </article>
             <ul>
                 <li><strong>Student Organizations:</strong> Join one of the many student organizations to connect with peers who share your interests and passions.</li>
                 <li><strong>Arts and Culture:</strong> Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</li>
@@ -98,7 +100,32 @@
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        </footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are committed to helping students achieve success by providing access to the best learning resources, food options, and tutoring services.</p>
+            </div>
+    
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="study.html">Study Area</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="tutoring.html">Tutoring</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@studentsuccess.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 University Ave, City, State, ZIP</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Student Success Portal | Designed by Biju Baek</p>
+        </div>
+    </footer>
 </body>
 </html>

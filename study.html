@@ -10,60 +10,87 @@
 <body>
     <a href = "#main" class = "skip">Skip to Main Content</a>
     <header>
-        <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "study.html">Study Area</a></li>
-                <li><a href = "food.html">Food</a></li>
-                <li><a href = "tutoring.html">Tutoring</a></li>
+        <nav class = "navbar">
+            <a class = "logo" href = "index.html">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            </a>
+            <ul class = "nav-list">
+                <li class= "nav-item"><a href = "index.html">Home</a></li>
+                <li class = "active nav-item"><a href = "study.html">Study</a></li>
+                <li class = "nav-item"><a href = "food.html">Food</a></li>
+                <li class = "nav-item"><a href = "tutoring.html">Tutoring</a></li>
             </ul>
         </nav>
         <h1>Study Spaces in the Universtiy of Michigan</h1>
-
     </header>
 
     <main id = "main">
+        <img src = "images/Study.jpeg" alt="A student is studying outside of North Quad building">
         <div>
-            <p>Study Spaces at U-M is a tool designed to help you find and reserve designated study spaces, computer stations, a space for you to take a remote class, or just a dedicated quiet touchdown spot between classes. <br> It's understandable that many might be anxious that there aren't many spaces on the site, after going through the last academic year where the primary method of accessing study space was to reserve.</p>
+            <p>Study Spaces at U-M is a tool designed to help you find and reserve designated study spaces, computer stations, a space for you to take a remote class, or just a dedicated quiet touchdown spot between classes.</p>
+            <p>It's understandable that many might be anxious that there aren't many spaces on the site, after going through the last academic year where the primary method of accessing study space was to reserve.</p>
         </div>
-
-<div>[Enter more of your own content here - that includes changing the  content of this page from Academic support to something else!]</div>
-            
-            <!-- Jackie Wolf -->
-    
         <div>
             <h2>Explore what's available and where</h2>
-            <h3>North Campus</h3>
-            <img src="images/BBB_Exterior.jpg" alt = "A student wearing a jacket walking outside of Bob and Betty Beyster Building (BBB)">
-            <ul>
-                <li>Bob and Betty Beyster Building(BBB)</li>
-                <li>Climate and Space Research Building (CSRB)</li>
-                <li>Electrical Engineering And Compputer Science Building (EECS)</li>
-                <li>Ford Motor Company Robotics Building (FMCRB)
-                </li>
-                <li>George G.Brown Laboratories (GG Brown)</li>
-                <li>James and Anne Duderstady Center (DC)</li>
-                <li>Lurie Biomedical Engineering Building (LBME)</li>
-                <li>North Campus Research Complex (NCRC)</li>
-            </ul>
+            <article>
+                <h3>North Campus Library</h3>
+                <img src="images/BBB_Exterior.jpeg" alt = "A student wearing a jacket walking outside of Bob and Betty Beyster Building (BBB)">
+                <figcaption>Bob and Betty Beyster Building</figcaption>
+                <br>
+                <ul>
+                    <li>Bob and Betty Beyster Building(BBB)</li>
+                    <li>Climate and Space Research Building (CSRB)</li>
+                    <li>Electrical Engineering And Compputer Science Building (EECS)</li>
+                    <li>Ford Motor Company Robotics Building (FMCRB)
+                    </li>
+                    <li>George G.Brown Laboratories (GG Brown)</li>
+                    <li>James and Anne Duderstady Center (DC)</li>
+                    <li>Lurie Biomedical Engineering Building (LBME)</li>
+                    <li>North Campus Research Complex (NCRC)</li>
+                </ul>
+            </article>
         </div>
         <div>
-            <h3>U-M Library</h3>
-            <img src="images/Hatcher_Library.jpg" alt = "Students are studing at the Hatcher Graduate Library">
-            <ul>
-                <li>Sharpio Undergraduate Library</li>
-                <li>Hatcher Graduate Library</li>
-                <li>CVGA</li>
-                <li>Taubman Health Sciences Library</li>
-                <li>Hatcher Donor Carrels</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Detroit Center</h3>
+            <article>
+                <h3>Central Campus Library</h3>
+                <img src="images/Hatcher_Library.jpg" alt = "Students are studing at the Hatcher Graduate Library">
+                <ul>
+                    <li>Sharpio Undergraduate Library</li>
+                    <li>Hatcher Graduate Library</li>
+                    <li>CVGA</li>
+                    <li>Taubman Health Sciences Library</li>
+                    <li>Hatcher Donor Carrels</li>
+                </ul>
+            </article>
         </div>
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are committed to helping students achieve success by providing access to the best learning resources, food options, and tutoring services.</p>
+            </div>
+    
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="study.html">Study Area</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="tutoring.html">Tutoring</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@studentsuccess.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 University Ave, City, State, ZIP</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Student Success Portal | Designed by Biju Baek</p>
+        </div>
     </footer>
     
 </body>
