@@ -10,7 +10,7 @@
 <body>
     <a href = "#main" class = "skip">Skip to Main Content</a>
     <header>
-            <nav class = "navbar">
+            <nav class = "navbar" tabindex="0">
                 <a class = "logo" href = "index.html">
                     <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
                 </a>
@@ -46,9 +46,9 @@
                 <h3>Hatcher Graduate Library</h3>
                 <figure>
                     <img src="images/Hatcher_library2.jpeg" alt="Hatcher Graduate Library Building">
-                    <figcaption>Hatcher Gruaduate Library in Central Campus</figcaption>
+                    <!-- <figcaption>Hatcher Gruaduate Library in Central Campus</figcaption> -->
                 </figure>
-                <p>Harlan Hatcher Graduate Library is the university’s largest and most historic library, offering an extensive collection of research materials, quiet study spaces, and stunning architecture that reflects the rich academic tradition of the University of Michigan.</p>
+                <p>Harlan Hatcher Graduate Library is the university's largest and most historic library, offering an extensive collection of research materials, quiet study spaces, and stunning architecture that reflects the rich academic tradition of the University of Michigan.</p>
             </article>
             <article>
                 <h3>Kresge Business Administration Library</h3>
@@ -88,13 +88,13 @@
         <section id="life-outside-classroom">
             <h2>Life Outside the Classroom</h2>
             <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
-            <ul>
-                <li><strong>Student Organizations:</strong> Join one of the many student organizations to connect with peers who share your interests and passions.</li>
-                <li><strong>Arts and Culture:</strong> Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</li>
-                <li><strong>Career Services:</strong> Utilize career counseling, job search resources, and networking opportunities to prepare for your professional future.</li>
-                <li><strong>Community Engagement:</strong> Get involved with local volunteering opportunities and community service projects to make a positive impact.</li>
-                <li><strong>Housing and Dining:</strong> Find information on on-campus housing options and dining services to ensure a comfortable living experience.</li>
-            </ul>
+            <ol>
+                <li>Student Organizations: Join one of the many student organizations to connect with peers who share your interests and passions.</li>
+                <li>Arts and Culture: Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</li>
+                <li>Career Services: Utilize career counseling, job search resources, and networking opportunities to prepare for your professional future.</li>
+                <li>Community Engagement: Get involved with local volunteering opportunities and community service projects to make a positive impact.</li>
+                <li>Housing and Dining:Find information on on-campus housing options and dining services to ensure a comfortable living experience.</li>
+            </ol>
         </section>
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
@@ -102,8 +102,8 @@
     <footer>
         <div class="footer-container">
             <div class="footer-section about">
-                <h3>About Us</h3>
-                <p>We are committed to helping students achieve success by providing access to the best learning resources, food options, and tutoring services.</p>
+                <h3>Student Success Portal</h3>
+                <p>As part of the University of Michigan, we are committed to helping students achieve success by providing access to the best learning resources, food options, and tutoring services.</p>
             </div>
     
             <div class="footer-section links">
@@ -124,8 +124,11 @@
         </div>
     
         <div class="footer-bottom">
-            <p>&copy; 2024 Student Success Portal | Designed by Biju Baek</p>
+            <p>&copy; <span id="year"></span> Student Success Portal | Designed by Biju Baek</p>
         </div>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+            console.log("year updated");
+        </script>
     </footer>
 </body>
-</html>
