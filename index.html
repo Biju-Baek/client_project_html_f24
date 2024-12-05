@@ -10,56 +10,83 @@
 <body>
     <a href = "#main" class = "skip">Skip to Main Content</a>
     <header>
-            <nav class = "navbar" tabindex="0">
-                <a class = "logo" href = "index.html">
-                    <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-                </a>
-                <ul class = "nav-list">
-                    <li class= "active nav-item"><a href = "index.html">Home</a></li>
-                    <li class = "nav-item"><a href = "study.html">Study</a></li>
-                    <li class = "nav-item"><a href = "food.html">Food</a></li>
-                    <li class = "nav-item"><a href = "tutoring.html">Tutoring</a></li>
-                </ul>
-            </nav>
-        <h1>Student Success Portal</h1>
+        <nav class = "top-nav" tabindex="0">
+            <a class = "logo" href = "index.html">
+                <img src="images/UMICH_LOGO.png" alt="University of Michigna Logo">
+            </a>
+            <button class="hamburgerbar-container" onclick="myFunction(this)" aria-label="Toggle navigation">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+            <ul class = "nav-menu">
+                <li class= "active nav-item">
+                    <a href = "index.html" class = "nav-link">Home</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "study.html" class = "nav-link">Study</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "food.html" class = "nav-link">Food</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "tutoring.html" class = "nav-link">Tutoring</a>
+                </li>
+            </ul>
+        </nav>
         <div class = "heroimage">
-            <img src = "images/U-M_Logo-Horizontal-Hex.png" alt = "University of Michigan Horizontal Logo">
+            <img src = "images/HeroImage01.jpg" alt = "Heroimage of Law Quad">
+            <div>
+                <h1 class = "hero-text">Welcome to Student Success Portal</h1>
+            </div>
         </div>
     </header>
     <main id = "main">
         <section>
-            <h2>Welcome to the UM Grad Success Navigator</h2>
-            <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
-            <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
+            <h2>Introduce University of Michigan Grad Success Navigator</h2>
+            <p>The Grad Success Navigator is your one-stop portal to essential tools and resources designed to support your academic journey at the University of Michigan. Explore the features of this website to enhance your learning experience, stay connected, and succeed both in and out of the classroom.</p>
             <div class="grid-container">
-                <div class="item1">In our Website:</div>
-                <div class="item2">Stydy Area</div>
-                <div class="item3">Food Support</div>  
-                <div class="item4">Peer Tutoring</div>
-                <div class="item4">Contact</div>
-              </div>
+                <div class="grid-header"><h3>Website Features:</h3></div>
+                <div class="grid-item"><p>Study Tools</p></div>
+                <div class="grid-item"><p>Meal Planning</p></div>
+                <div class="grid-item"><p>Academic Support</p></div>
+                <div class="grid-item"><p>Contact Us</p></div>
+            </div>
         </section>
         <section>
-            <h2>Study Area in Campus</h2>
-            <p>Check out the list of differnent study areas in the campus and find your favorite spot:</p>
-            <article>
-                <h3>Hatcher Graduate Library</h3>
-                <figure>
-                    <img src="images/Hatcher_library2.jpeg" alt="Hatcher Graduate Library Building">
-                    <!-- <figcaption>Hatcher Gruaduate Library in Central Campus</figcaption> -->
-                </figure>
-                <p>Harlan Hatcher Graduate Library is the university's largest and most historic library, offering an extensive collection of research materials, quiet study spaces, and stunning architecture that reflects the rich academic tradition of the University of Michigan.</p>
-            </article>
-            <article>
-                <h3>Kresge Business Administration Library</h3>
-                <figure>
-                    <img src="images/Kresge Business Administration Library.jpeg" alt="Kresge Business Administration Library Building.">
-                    <figcaption>Kresge Business Administration Library in Central Campus</figcaption>
-                </figure>
-                <p>Located next to Ross Business Building, enjoy authentic global cuisine, cozy study spaces, and an inspiring collection of resources at the Kresge Library, a perfect spot for business students and the broader university community.</p>
-            </article>
+            <h2>Libraries in Campus</h2>
+        <div class="slider-wrapper-container">
+            <div class="slider-container" tabindex="0" role="region" aria-label="Library Slider">
+                <div class="slider-wrapper">
+                    <div class="card-item">
+                        <img src="images/Hatcher_library2.jpeg" alt="Hatcher Graduate Library" class="library-image">
+                        <h2 class="library-name">Hatcher Graduate Library</h2>
+                        <p class="library-explain">An amazing library with extensive resources and beautiful architecture.</p>
+                        <button class="location-button" onclick="openMap('Hatcher Graduate Library')">View Location</button>
+                    </div>
+                    <div class="card-item">
+                        <img src="images/Shapiro library.webp" alt="Shapiro Library" class="library-image">
+                        <h2 class="library-name">Shapiro Library</h2>
+                        <p class="library-explain">An amazing library with extensive resources and beautiful architecture</p>
+                        <button class="location-button" onclick="openMap('Shapiro Library')">View Location</button>
+                    </div>
+                    <div class="card-item">
+                        <img src="images/Kresge Business Administration Library.jpeg" alt="Another Library" class="library-image">
+                        <h2 class="library-name">Kresge Library</h2>
+                        <p class="library-explain">An amazing library with extensive resources and beautiful architecture</p>
+                        <button class="location-button" onclick="openMap('Kresge Library')">View Location</button>
+                    </div>
+                    <div class="card-item">
+                        <img src="images/Kresge Business Administration Library.jpeg" alt="Another Library" class="library-image">
+                        <h2 class="library-name">Kresge Library</h2>
+                        <p class="library-explain">An amazing library with extensive resources and beautiful architecture</p>
+                        <button class="location-button" onclick="openMap('Kresge Library')">View Location</button>
+                    </div>
+                </div>
+                <button class="slider-button prev" onclick="slide(-1)" aria-label="Previous Slide">&#10094;</button>
+                <button class="slider-button next" onclick="slide(1)" aria-label="Next Slide">&#10095;</button>
+        </div>
         </section>
-        
         <section>
             <h2>Mental Health</h2>
             <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
@@ -83,21 +110,46 @@
                 <p> Join peer support groups for shared experiences and collective coping strategies.</p>
             </article>
         </section>
-
-        
-        <section id="life-outside-classroom">
-            <h2>Life Outside the Classroom</h2>
-            <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
-            <ol>
-                <li>Student Organizations: Join one of the many student organizations to connect with peers who share your interests and passions.</li>
-                <li>Arts and Culture: Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</li>
-                <li>Career Services: Utilize career counseling, job search resources, and networking opportunities to prepare for your professional future.</li>
-                <li>Community Engagement: Get involved with local volunteering opportunities and community service projects to make a positive impact.</li>
-                <li>Housing and Dining:Find information on on-campus housing options and dining services to ensure a comfortable living experience.</li>
-            </ol>
+        <section>
+            <div class="faq-container">
+                <h2>Life Outside the Classroom</h2>
+                <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
+                <div class="faq-item">
+                    <h3>
+                        What student organizations can I join at UM? <span class="icon">+</span>
+                    </h3>
+                    <p class="answer">Join one of the many student organizations to connect with peers who share your interests and passions.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>
+                        What arts and culture opportunities are available at UM? <span class="icon">+</span>
+                    </h3>
+                    <p class="answer">Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>
+                        What career services does UM provide? <span class="icon">+</span>
+                    </h3>
+                    <p class="answer">Utilize career counseling, job search resources, and networking opportunities to prepare for your professional future.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>
+                        How can I engage with the local community? <span class="icon">+</span>
+                    </h3>
+                    <p class="answer">Get involved with local volunteering opportunities and community service projects to make a positive impact.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>
+                        Where can I find housing and dining information? <span class="icon">+</span>
+                    </h3>
+                    <p class="answer">Find information on on-campus housing options and dining services to ensure a comfortable living experience.</p>
+                </div>
+            </div>
         </section>
-        <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
-        UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
+        </div>
     </main>
     <footer>
         <div class="footer-container">
@@ -105,7 +157,6 @@
                 <h3>Student Success Portal</h3>
                 <p>As part of the University of Michigan, we are committed to helping students achieve success by providing access to the best learning resources, food options, and tutoring services.</p>
             </div>
-    
             <div class="footer-section links">
                 <h3>Quick Links</h3>
                 <ul>
@@ -114,7 +165,6 @@
                     <li><a href="tutoring.html">Tutoring</a></li>
                 </ul>
             </div>
-    
             <div class="footer-section contact">
                 <h3>Contact Us</h3>
                 <p>Email: info@studentsuccess.com</p>
@@ -122,7 +172,6 @@
                 <p>Address: 123 University Ave, City, State, ZIP</p>
             </div>
         </div>
-    
         <div class="footer-bottom">
             <p>&copy; <span id="year"></span> Student Success Portal | Designed by Biju Baek</p>
         </div>
@@ -131,4 +180,5 @@
             console.log("year updated");
         </script>
     </footer>
+    <script src="js/clinetproject.js"></script>
 </body>

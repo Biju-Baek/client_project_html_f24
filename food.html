@@ -10,15 +10,28 @@
 <body>
     <a href = "#main" class = "skip"> Skip to Main Content</a>
     <header>
-        <nav class = "navbar" tabindex="0">
+        <nav class = "top-nav" tabindex="0">
             <a class = "logo" href = "index.html">
-                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+                <img src="images/UMICH_LOGO.png" alt="University of Michigna Logo">
             </a>
-            <ul class = "nav-list">
-                <li class = "nav-item"><a href = "index.html">Home</a></li>
-                <li class = "nav-item"><a href = "study.html">Study</a></li>
-                <li class = "active nav-item"><a href = "food.html">Food</a></li>
-                <li class = "nav-item"><a href = "tutoring.html">Tutoring</a></li>
+            <button class="hamburgerbar-container" onclick="myFunction(this)" aria-label="Toggle navigation">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+            <ul class = "nav-menu">
+                <li class= "active nav-item">
+                    <a href = "index.html" class = "nav-link">Home</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "study.html" class = "nav-link">Study</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "food.html" class = "nav-link">Food</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "tutoring.html" class = "nav-link">Tutoring</a>
+                </li>
             </ul>
         </nav>
         <h1>Maize & Blue Cupboard</h1>
@@ -35,31 +48,35 @@
             <p>Shopping at the Maize and Blue Cupboard is by appointment only. Before you go on shopping, please make an appointment by visiting our sign up page here. </p>
             <a href="https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2024-10" alt="Link to make an appointment">Make an appointment</a>
         </div>
-        <div>
+        <section>
             <h2>What We Provide</h2>
-            <div calss = "gallery">
-                <div class = "gallery1">
-                    <img src="images/icon1.png" alt = "Food icon">
-                    <h3>Food</h3>
-                    <p>Produce, dairy, meat, bread, frozen and shelf-stable foods (i.e. rice, cans, tuna, etc.)</p>
+            <div class="gallery">
+                <div calss="group">
+                    <div class = "gallery-item gallery1">
+                        <img src="images/Food.png" alt = "Food icon">
+                        <h3>Food</h3>
+                        <p>Produce, dairy, meat, bread, frozen and shelf-stable foods (i.e. rice, cans, tuna, etc.)</p>
+                    </div>
+                    <div class = "gallery-item gallery2">
+                        <img src="images/Cook.png" alt = "Boiling pot icon">
+                        <h3>Kitchen & Cooking</h3>
+                        <p>Dishes, silverware, pots & pans, Tupperware, cutting boards, knives, and other kitchenware</p>
+                    </div>
                 </div>
-                <div class = "gallery2">
-                    <img src="images/icon2.png" alt = "Boiling pot icon">
-                    <h3>Kitchen & Cooking</h3>
-                    <p>Dishes, silverware, pots & pans, Tupperware, cutting boards, knives, and other kitchenware</p>
-                </div>
-                <div class = "gallery3">
-                    <img src="images/icon3.png" alt = "Dish detergent icon">
-                    <h3>Personal & Household</h3>
-                    <p>Trash bags, toilet paper, cleaning supplies, hygiene products, school supplies, baby items and more</p>
-                </div>
-                <div class = "gallery4">
-                    <img src="images/icon4.png" alt = "Heart icon">
-                    <h3>Support</h3>
-                    <p>Get connected to campus experts like CAPS, Dean of Students and Financial Aid, as well as SNAP (Michigan's food program)</p>
+                <div class="group">
+                    <div class = "gallery-item gallery3">
+                        <img src="images/Household.png" alt = "Dish detergent icon">
+                        <h3>Personal & Household</h3>
+                        <p>Trash bags, toilet paper, cleaning supplies, hygiene products, school supplies, baby items and more</p>
+                    </div>
+                    <div class = "gallery-item gallery4">
+                        <img src="images/Support.png" alt = "Heart icon">
+                        <h3>Support</h3>
+                        <p>Get connected to campus experts like CAPS, Dean of Students and Financial Aid, as well as SNAP (Michigan's food program)</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer-container">
@@ -89,5 +106,6 @@
             <p>&copy; 2024 Student Success Portal | Designed by Biju Baek</p>
         </div>
     </footer>
+    <script src="js/clinetproject.js"></script>
 </body>
 </html>

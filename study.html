@@ -10,15 +10,28 @@
 <body>
     <a href = "#main" class = "skip">Skip to Main Content</a>
     <header>
-        <nav class = "navbar" tabindex="0">
+        <nav class = "top-nav" tabindex="0">
             <a class = "logo" href = "index.html">
-                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+                <img src="images/UMICH_LOGO.png" alt="University of Michigna Logo">
             </a>
-            <ul class = "nav-list">
-                <li class= "nav-item"><a href = "index.html">Home</a></li>
-                <li class = "active nav-item"><a href = "study.html">Study</a></li>
-                <li class = "nav-item"><a href = "food.html">Food</a></li>
-                <li class = "nav-item"><a href = "tutoring.html">Tutoring</a></li>
+            <button class="hamburgerbar-container" onclick="myFunction(this)" aria-label="Toggle navigation">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+            <ul class = "nav-menu">
+                <li class= "active nav-item">
+                    <a href = "index.html" class = "nav-link">Home</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "study.html" class = "nav-link">Study</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "food.html" class = "nav-link">Food</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "tutoring.html" class = "nav-link">Tutoring</a>
+                </li>
             </ul>
         </nav>
         <h1>Study Spaces in the Universtiy of Michigan</h1>
@@ -93,7 +106,6 @@
             <p>&copy; 2024 Student Success Portal | Designed by Biju Baek</p>
         </div>
     </footer>
-    
+    <script src="js/clinetproject.js"></script>
 </body>
-
 </html>
