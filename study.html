@@ -20,7 +20,7 @@
                 <div class="bar3"></div>
             </button>
             <ul class = "nav-menu">
-                <li class= "active nav-item">
+                <li class= "nav-item">
                     <a href = "index.html" class = "nav-link">Home</a>
                 </li>
                 <li class = "nav-item">
@@ -34,48 +34,90 @@
                 </li>
             </ul>
         </nav>
-        <h1>Study Spaces in the Universtiy of Michigan</h1>
     </header>
 
     <main id = "main">
-        <img src = "images/Study.jpeg" alt="A student is studying outside of North Quad building">
+        <img src = "images/Study.jpeg" class="heroimage2" alt="A student is studying outside of North Quad building">
+        <h1>Study Spaces in the Universtiy of Michigan</h1>
         <div>
             <p>Study Spaces at U-M is a tool designed to help you find and reserve designated study spaces, computer stations, a space for you to take a remote class, or just a dedicated quiet touchdown spot between classes.</p>
             <p>It's understandable that many might be anxious that there aren't many spaces on the site, after going through the last academic year where the primary method of accessing study space was to reserve.</p>
         </div>
-        <div>
-            <h2>Explore what's available and where</h2>
-            <article>
-                <h3>North Campus Library</h3>
-                <img src="images/BBB_Exterior.jpeg" alt = "A student wearing a jacket walking outside of Bob and Betty Beyster Building (BBB)">
-                <figcaption>Bob and Betty Beyster Building</figcaption>
-                <br>
-                <ol>
-                    <li>Bob and Betty Beyster Building(BBB)</li>
-                    <li>Climate and Space Research Building (CSRB)</li>
-                    <li>Electrical Engineering And Compputer Science Building (EECS)</li>
-                    <li>Ford Motor Company Robotics Building (FMCRB)
-                    </li>
-                    <li>George G.Brown Laboratories (GG Brown)</li>
-                    <li>James and Anne Duderstady Center (DC)</li>
-                    <li>Lurie Biomedical Engineering Building (LBME)</li>
-                    <li>North Campus Research Complex (NCRC)</li>
-                </ol>
-            </article>
-        </div>
-        <div>
-            <article>
-                <h3>Central Campus Library</h3>
-                <img src="images/Hatcher_Library.jpg" alt = "Students are studing at the Hatcher Graduate Library">
-                <figcaption>Hatcher Gruaduate Library in Central Campus</figcaption>
-                <ol>
-                    <li>Sharpio Undergraduate Library</li>
-                    <li>Hatcher Graduate Library</li>
-                    <li>CVGA</li>
-                    <li>Taubman Health Sciences Library</li>
-                    <li>Hatcher Donor Carrels</li>
-                </ol>
-            </article>
+        <div class="filter_container">
+            <!--Filter Buttons-->
+            <h2>Find your study area</h2>
+            <div class="filter_buttons">
+                <button class="active" data-name="all">Show All</button>
+                <button data-name="north_campus">North Campus</button>
+                <button data-name="central_campus">Central Campus</button>
+                <button data-name="library_only">Library Only</button>
+            </div>
+        <!--Image Cards-->
+            <div class="filterable_cards">
+                <div class="card" data-name="library_only">
+                    <img src="images/Hatcher_Library.jpg" alt="Inside of Hatcher Library">
+                    <div class="card_body">
+                        <h3 class="card_title">Hatcher Library</h3>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium consectetur totam atque tenetur necessitatibus error enim quis unde dolorem ut autem dolores placeat quia corrupti accusantium dolor cum magnam.</p>
+                    </div>
+                </div>
+                <div class="card" data-name="central_campus">
+                    <img src="images/School_of_Kinesiology_Building_2021.jpg" alt="School of Kinesiology building">
+                    <div class="card_body">
+                        <h3 class="card_title">School of Kinesiology</h3>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium consectetur totam atque tenetur necessitatibus error enim quis unde dolorem ut autem dolores placeat quia corrupti accusantium dolor cum magnam.</p>
+                    </div>
+                </div>
+                <div class="card" data-name="central_campus">
+                    <img src="images/NorthQuad.jpeg" alt="School of Information (North Quad) building">
+                    <div class="card_body">
+                        <h3 class="card_title">School of Information (North Quad)</h3>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium consectetur totam atque tenetur necessitatibus error enim quis unde dolorem ut autem dolores placeat quia corrupti accusantium dolor cum magnam.</p>
+                    </div>
+                </div>
+                <div class="card" data-name="central_campus">
+                    <img src="images/mason hall.jpeg" alt="Mason Hall building">
+                    <div class="card_body">
+                        <h3 class="card_title">Mason Hall</h3>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium consectetur totam atque tenetur necessitatibus error enim quis unde dolorem ut autem dolores placeat quia corrupti accusantium dolor cum magnam.</p>
+                    </div>
+                </div>
+                <div class="card" data-name="library_only">
+                    <img src="images/Hatcher_library2.jpeg" alt="Inside of Kresge Library">
+                    <div class="card_body">
+                        <h3 class="card_title">Kresge Library</h3>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium consectetur totam atque tenetur necessitatibus error enim quis unde dolorem ut autem dolores placeat quia corrupti accusantium dolor cum magnam.</p>
+                    </div>
+                </div>
+                <div class="card" data-name="library_only">
+                    <img src="images/Shapiro library.webp" alt="Outside of Shapiro Library building">
+                    <div class="card_body">
+                        <h3 class="card_title">Shapiro Library</h3>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium consectetur totam atque tenetur necessitatibus error enim quis unde dolorem ut autem dolores placeat quia corrupti accusantium dolor cum magnam.</p>
+                    </div>
+                </div>
+                <div class="card" data-name="north_campus">
+                    <img src="images/BBB_Exterior.jpeg" alt="Outside of Bob and Betty Beyster Building">
+                    <div class="card_body">
+                        <h3 class="card_title">Bob and Betty Beyster Building</h3>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium consectetur totam atque tenetur necessitatibus error enim quis unde dolorem ut autem dolores placeat quia corrupti accusantium dolor cum magnam.</p>
+                    </div>
+                </div>
+                <div class="card" data-name="north_campus">
+                    <img src="images/James and Anne Duderstady Center (DC) .png" alt="Outside of James and Anne Duderstady Center">
+                    <div class="card_body">
+                        <h3 class="card_title">James and Anne Duderstady Center</h3>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium consectetur totam atque tenetur necessitatibus error enim quis unde dolorem ut autem dolores placeat quia corrupti accusantium dolor cum magnam.</p>
+                    </div>
+                </div>
+                <div class="card" data-name="north_campus">
+                    <img src="images/William L. Clements Library.jpeg" alt="Outside of William L. Clements Library">
+                    <div class="card_body">
+                        <h3 class="card_title">William L. Clements Library</h3>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium consectetur totam atque tenetur necessitatibus error enim quis unde dolorem ut autem dolores placeat quia corrupti accusantium dolor cum magnam.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -101,7 +143,6 @@
                 <p>Address: 123 University Ave, City, State, ZIP</p>
             </div>
         </div>
-    
         <div class="footer-bottom">
             <p>&copy; 2024 Student Success Portal | Designed by Biju Baek</p>
         </div>

@@ -10,8 +10,8 @@ function myFunction() {
       y.classList.add("change");
     }
 }
-let currentIndex = 0;
 
+let currentIndex = 0;
 function slide(direction) {
     let sliderWrapper = document.querySelector('.slider-wrapper');
     let cards = document.querySelectorAll('.card-item');
@@ -26,10 +26,8 @@ function slide(direction) {
     } else if (currentIndex >= totalCards) {
         currentIndex = 0;
     }
-
     // Calculate the translateX value
     let translateX = -currentIndex * 100;
-
     // Apply the transform
     sliderWrapper.style.transform = `translateX(${translateX}%)`;
 }
@@ -50,3 +48,21 @@ document.querySelectorAll(".faq-item h3").forEach(item => {
         icon.textContent = parent.classList.contains("open") ? "-" : "+";
     });
 });
+
+let filterButtons = document.querySelectorAll(".filter_buttons button");
+let filterableCards = document.querySelectorAll(".filterable_cards .card");
+
+const filterCards = e => {
+    const button = e.target.tagName === "BUTTON" ? e.target : e.target.closest("button");
+    document.querySelector(".filter_buttons .active").classList.remove("active");
+    button.classList.add("active");
+
+    filterableCards.forEach(card => {
+        card.classList.add("hide");
+        if (card.dataset.name === button.dataset.name || button.dataset.name === "all") {
+            card.classList.remove("hide");
+        }
+    });
+};
+
+filterButtons.forEach(button => button.addEventListener("click", filterCards));
